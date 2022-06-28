@@ -15,18 +15,19 @@ class User extends Authenticatable
     /**
      * The attributes that are mass assignable.
      *
-     * @var array<int, string>
+     * @var string[]
      */
     protected $fillable = [
         'name',
         'email',
         'password',
+        'avatar',
     ];
 
     /**
      * The attributes that should be hidden for serialization.
      *
-     * @var array<int, string>
+     * @var array
      */
     protected $hidden = [
         'password',
@@ -36,9 +37,28 @@ class User extends Authenticatable
     /**
      * The attributes that should be cast.
      *
-     * @var array<string, string>
+     * @var array
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public static function booted(){
+
+         /** Make avatar */
+
+        static::creating(function($model)
+        {
+            $path = 'users/avatars/';
+            $fontPath = public_path('fonts/Oliciy.ttf');
+            $char = strtoupper($model->name[0]);
+            $newAvatarName = rand(12,34353).time().'_avatar.png';
+            $dest = $path.$newAvatarName;
+
+            $createAvatar = makeAvatar($fontPath,$dest,$char);
+            $picture = $createAvatar == true ? $newAvatarName : '';
+
+            $model->avatar = $picture;
+        });
+    }
 }
