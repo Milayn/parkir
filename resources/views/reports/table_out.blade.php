@@ -8,8 +8,6 @@
             <th>Nomer Parkir</th>
             <th>Dibuat Pada</th>
             <th>Dibuat Oleh</th>
-            <th class="nosort">Aksi</th>
-            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -23,9 +21,6 @@
             <td>{{ $vehicleOut->created_at->format('Y/m/d H:i A') }}</td>
             <td>{{ $vehicleOut->user->name }}</td>
             <td>
-                <div class="table-actions">
-                    <a href="{{ route('reports.cetak_pdf') }}" class="ik ik-printer"></a>
-                </div>
             </td>
             <td></td>
         </tr>

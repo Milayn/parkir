@@ -24,7 +24,7 @@
                 <div class="card-search with-adv-search dropdown">
                     <form action="{{ route('reports.index') }}" method="GET">
                         <input type="text" value="{{ request()->search_out }}" class="form-control" name="search_out"
-                            placeholder="Search.." required>
+                            placeholder="Cari..." required>
                         <input type="hidden" name="report_out" value="report_out">
                         <button type="submit" class="btn btn-icon"><i class="ik ik-search"></i></button>
                     </form>
@@ -41,7 +41,7 @@
                                         data-toggle="datetimepicker" data-target="#datepicker_out_from">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="date">Samapi Tanggal</label>
+                                    <label for="date">Sampai Tanggal</label>
                                     <input type="text" value1="{{ request()->to_date }}"
                                         class="form-control datetimepicker-input" name="to_date" id="datepicker_out_to"
                                         data-toggle="datetimepicker" data-target="#datepicker_out_to">
@@ -56,9 +56,12 @@
                     </form>
                 </div>
             </div>
+                
         </div>
     </div>
-
+    <div class="col-lg-6">
+                <a class="btn btn-outline-primary" href="{{ route('reports.cetak_pdf') }}" > <i class="ik ik-printer"> Cetak Laporan Kendaran Parkir</i></a>
+            </div>
     <div class="row">
         <div class="col-md-12">
             <div class="card">
@@ -72,5 +75,6 @@
             </div>
         </div>
     </div>
+    
 
 @endsection
