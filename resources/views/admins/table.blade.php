@@ -2,10 +2,10 @@
     <thead>
         <tr>
             <th>Id</th>
-            <th class="nosort">Avatar</th>
-            <th>Name</th>
+            <th class="nosort">Foto Profile</th>
+            <th>Nama</th>
             <th>Email</th>
-            <th>Created At</th>
+            <th>Dibuat Pada</th>
             <th class="nosort">&nbsp;</th>
             <th></th>
         </tr>

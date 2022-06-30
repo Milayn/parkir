@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Sign Up | JSS Parking System - Admin Template</title>
+    <title>Masuk | BTD Parking System</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,13 +37,13 @@
                         <div class="logo-centered">
                             <a href="../index.html"><img src="../src/img/brand.svg" alt=""></a>
                         </div>
-                        <h3>Sign In to JSS Parking System</h3>
-                        <p>Happy to see you again!</p>
+                        <h3>Masuk to BTD Parking System</h3>
+                        
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
                             <div class="form-group">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
-                                    name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                    name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Masukkan Email">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -55,7 +55,7 @@
                             <div class="form-group">
                                 <input id="password" type="password"
                                     class="form-control @error('password') is-invalid @enderror" name="password"
-                                    required autocomplete="current-password">
+                                    required autocomplete="current-password" placeholder="Masukkan Password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -68,23 +68,17 @@
                                 <div class="col text-left">
                                     <label class="custom-control custom-checkbox">
                                             <input class="custom-control-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-                                        <span class="custom-control-label">&nbsp;Remember Me</span>
+                                        <span class="custom-control-label">&nbsp;Ingat Saya</span>
                                     </label>
                                 </div>
-                                <div class="col text-right">
-                                    @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-                                </div>
+                                
                             </div>
                             <div class="sign-btn text-center">
-                                <button type="submit" class="btn btn-theme">  {{ __('Login') }}</button>
+                                <button type="submit" class="btn btn-theme">  {{ __('Masuk') }}</button>
                             </div>
                         </form>
                         <div class="register">
-                            <p>{{ __("Don't have an account?") }} <a href="{{ route('register') }}">{{ __('Create an Account') }}</a></p>
+                            <p>{{ __("Belum punya akun?") }} <a class="btn btn-link" href="{{ route('register') }}">{{ __('Buat Akun') }}</a></p>
                         </div>
                     </div>
                 </div>

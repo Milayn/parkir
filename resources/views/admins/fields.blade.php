@@ -5,7 +5,7 @@
         <input type="text" name="nama" value="{{ isset($user) ? $user->name : '' }}" class="form-control" id="exampleInputName1" placeholder="Nama">
     </div>
     <div class="form-group">
-        <label for="exampleInputEmail3">Email address</label>
+        <label for="exampleInputEmail3">Alamat Email</label>
         <input type="email" name="email" value="{{ isset($user) ? $user->email : '' }}" class="form-control" id="exampleInputEmail3" placeholder="Email">
     </div>
     <div class="form-group">
@@ -14,7 +14,7 @@
     </div>
 
     <div class="form-group">
-        <label for="avatar">File Upload</label>
+        <label for="avatar">Upload Foto Profile</label>
         <input type="file" class="form-control" required="required" name="avatar"></br>
     </div>
     <button type="submit" class="btn btn-primary mr-2">Submit</button>

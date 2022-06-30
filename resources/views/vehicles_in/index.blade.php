@@ -6,12 +6,12 @@
             <div class="page-header-title">
                 <i class="ik ik-inbox bg-blue"></i>
                 <div class="d-inline">
-                    <h5>Vehicles In List</h5>
+                    <h5>Data Kendaraan Masuk</h5>
                 </div>
             </div>
         </div>
         <div class="col-lg-2">
-            <a class="btn btn-theme" href="{{ route('vehiclesIn.create') }}"> Add New Vehicle In</a>
+            <a class="btn btn-theme" href="{{ route('vehiclesIn.create') }}"> Tambah Data Masuk </a>
         </div>
     </div>
 </div>
@@ -23,10 +23,10 @@
             <div class="card-body">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="home" role="tab" aria-controls="home" aria-selected="true">Current In Vehicles</a>
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="home" role="tab" aria-controls="home" aria-selected="true">Data Baru Kendaraan Masuk</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Vehicles History</a>
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Catatan Kendaraan Masuk</a>
                     </li>
 
                   </ul>

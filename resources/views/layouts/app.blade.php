@@ -23,7 +23,7 @@
 
                 <footer class="footer">
                     <div class="w-100 clearfix">
-                        <span class="text-center text-sm-left d-md-inline-block">Copyright © 2022 BGA Parking System v1.0. Tim 4. All Rights Reserved.</span>
+                        <span class="text-center text-sm-left d-md-inline-block">Copyright © 2022 BTD Parking System v1.0. Tim 4. All Rights Reserved.</span>
                     </div>
                 </footer>
 

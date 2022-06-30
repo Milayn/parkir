@@ -27,7 +27,7 @@ if (!function_exists('makeAvatar')) {
 
 function createUserAvatar($request)
 {
-    $path = 'public/storage/images/';
+    $path = '/storage/images/';
     $fontPath = public_path('fonts/Oliciy.ttf');
     $char = strtoupper($request->name[0]);
     $newAvatarName = rand(12, 34353) . time() . '_avatar.png';
@@ -51,7 +51,7 @@ function is_Admin()
 
 function getUserAvatar($avatar)
 {
-    return asset('/users/avatars/' . $avatar);
+    return asset('/storage/images/' . $avatar);
 }
 
 

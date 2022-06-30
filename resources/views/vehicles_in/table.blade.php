@@ -4,11 +4,11 @@
             <th>Id</th>
             <th>Reg #</th>
             <th>Nama Kendaraan</th>
-            <th>Area Parkir </th>
+            <th>Area Parkir</th>
             <th>Nomer Parkir</th>
-            <th>Created At</th>
-            <th>Created By</th>
-            <th class="nosort">Operation</th>
+            <th>Dibuat Pada</th>
+            <th>Dibuat Oleh</th>
+            <th class="nosort">Aksi</th>
             <th>Action</th>
         </tr>
     </thead>

@@ -2,10 +2,10 @@
     <thead>
         <tr>
             <th>Id</th>
-            <th>Name</th>
+            <th>Nama</th>
             <th>Email</th>
-            <th>Created At</th>
-            <th class="nosort">&nbsp;</th>
+            <th>Dibuat Pada</th>
+            <th class="nosort">Aksi</th>
         </tr>
     </thead>
     <tbody>

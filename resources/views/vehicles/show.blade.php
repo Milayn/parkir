@@ -14,26 +14,26 @@
 
                         <div class="row">
                             <div class="col-md-4">
-                        <li class="list-group-item">Duration</li>
+                        <li class="list-group-item">Durasi Parkir</li>
                     </div>
                     <div class="col-md-8">
-                        <li class="list-group-item text-right"><strong>{{ $vehicle->duration }} Days</strong></li>
+                        <li class="list-group-item text-right"><strong>{{ $vehicle->duration }} Kali</strong></li>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
-                        <li class="list-group-item">Per Day Charge</li>
+                        <li class="list-group-item">Biaya Parkir</li>
                     </div>
                     <div class="col-md-8">
-                        <li class="list-group-item text-right"><strong>GMD {{ $vehicle->packing_charge }} </strong></li>
+                        <li class="list-group-item text-right"><strong>Rp. {{ $vehicle->packing_charge }} </strong></li>
                     </div>
                 </div>
                     <div class="row">
                         <div class="col-md-4">
-                            <li class="list-group-item">Total Amount</li>
+                            <li class="list-group-item">Total Parkir</li>
                         </div>
                         <div class="col-md-8">
-                            <li class="list-group-item text-right"><strong> GMD {{ $vehicle->duration *  $vehicle->packing_charge }}</strong></li>
+                            <li class="list-group-item text-right"><strong> Rp. {{ $vehicle->duration *  $vehicle->packing_charge }}</strong></li>
                         </div>
                         </div>
 

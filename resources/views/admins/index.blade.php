@@ -15,12 +15,12 @@
             <nav class="breadcrumb-container" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="../index.html"><i class="ik ik-home"></i></a>
+                        <a href="../home"><i class="ik ik-home"></i></a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="#">Tables</a>
+                        <a href="#">Admin</a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Data Table</li>
+                    <li class="breadcrumb-item active" aria-current="page">Daftar Admin</li>
                 </ol>
             </nav>
         </div>
@@ -31,7 +31,7 @@
 <div class="row">
     <div class="col-md-12">
         <div class="card">
-            <div class="card-header"><h3>Adminstrators List</h3></div>
+            <div class="card-header"><h3>Daftar Admin</h3></div>
             <div class="card-body">
                 @include('admins.table')
 

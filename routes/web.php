@@ -30,5 +30,5 @@ Route::middleware('auth')->group(function () {
     Route::resource('/vehiclesOut', App\Http\Controllers\VehicleOutController::class);
 
     Route::get('reports/index', [App\Http\Controllers\ReportController::class, 'index'])->name('reports.index');
-
+    Route::get('/reports/cetak_pdf', 'ReportController@cetak_pdf');
 });

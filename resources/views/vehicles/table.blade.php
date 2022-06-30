@@ -9,7 +9,7 @@
             <th>Plat Nomer</th>
             <th>Status</th>
             <th>Dibuat pada</th>
-            <th class="nosort">Operation</th>
+            <th class="nosort">Aksi</th>
             <th>Action</th>
         </tr>
     </thead>
