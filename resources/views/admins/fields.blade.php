@@ -1,25 +1,12 @@
-<form class="forms-sample" method="POST" accept="{{ route('user.store') }}">
+<form class="forms-sample" method="POST" action="{{ route('user.store') }}" id="myForm" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
-        <label for="exampleInputName1">Name</label>
-        <input type="text" name="name" value="{{ isset($user) ? $user->name : '' }}" class="form-control" id="exampleInputName1" placeholder="Name">
+        <label for="Name">Nama</label>
+        <input type="text" name="nama" value="{{ isset($user) ? $user->name : '' }}" class="form-control" id="exampleInputName1" placeholder="Nama">
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="exampleInputEmail3">Email address</label>
-                <input type="email" name="email" value="{{ isset($user) ? $user->email : '' }}" class="form-control" id="exampleInputEmail3" placeholder="Email">
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="exampleSelectGender">Gender</label>
-                <select class="form-control" id="exampleSelectGender">
-                    <option>Male</option>
-                    <option>Female</option>
-                </select>
-            </div>
-        </div>
+    <div class="form-group">
+        <label for="exampleInputEmail3">Email address</label>
+        <input type="email" name="email" value="{{ isset($user) ? $user->email : '' }}" class="form-control" id="exampleInputEmail3" placeholder="Email">
     </div>
     <div class="form-group">
         <label for="exampleInputPassword4">Password</label>
@@ -27,19 +14,8 @@
     </div>
 
     <div class="form-group">
-        <label>File upload</label>
-        <input type="file" name="img[]" class="file-upload-default">
-        <div class="input-group col-xs-12">
-            <input type="text" class="form-control file-upload-info" enabled placeholder="Upload Image">
-            <span class="input-group-append">
-            <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
-            </span>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="exampleTextarea1">Alamat</label>
-        <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+        <label for="avatar">File Upload</label>
+        <input type="file" class="form-control" required="required" name="avatar"></br>
     </div>
     <button type="submit" class="btn btn-primary mr-2">Submit</button>
-    <button class="btn btn-light">Kembali</button>
 </form>

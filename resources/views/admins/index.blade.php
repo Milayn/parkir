@@ -7,8 +7,7 @@
             <div class="page-header-title">
                 <i class="ik ik-inbox bg-blue"></i>
                 <div class="d-inline">
-                    <h5>Data Table</h5>
-                    <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                    <h5>Data Admin</h5>
                 </div>
             </div>
         </div>
@@ -32,7 +31,7 @@
 <div class="row">
     <div class="col-md-12">
         <div class="card">
-            <div class="card-header"><h3>Daftar Admin</h3></div>
+            <div class="card-header"><h3>Adminstrators List</h3></div>
             <div class="card-body">
                 @include('admins.table')
 

@@ -8,7 +8,7 @@
                 <div class="widget-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="state">
-                            <h6>Vechile In Today</h6>
+                            <h6>Kendaraan Masuk Hari Ini</h6>
                             <h2>{{ $total_vehicle_in }}</h2>
                         </div>
                         <div class="icon">
@@ -27,7 +27,7 @@
                 <div class="widget-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="state">
-                            <h6>Vechile Out Today</h6>
+                            <h6>Kendaraan Keluar Hari Ini</h6>
                             <h2>{{ $total_vehicle_out }}</h2>
                         </div>
                         <div class="icon">

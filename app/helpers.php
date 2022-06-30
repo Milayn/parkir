@@ -27,7 +27,7 @@ if (!function_exists('makeAvatar')) {
 
 function createUserAvatar($request)
 {
-    $path = 'users/avatars/';
+    $path = 'public/storage/images/';
     $fontPath = public_path('fonts/Oliciy.ttf');
     $char = strtoupper($request->name[0]);
     $newAvatarName = rand(12, 34353) . time() . '_avatar.png';
