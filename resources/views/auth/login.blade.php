@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Masuk | BTD Parking System</title>
+    <title>Masuk | SIA Parking System</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,7 +37,7 @@
                         <div class="logo-centered">
                             <a href="../index.html"><img src="../src/img/brand.svg" alt=""></a>
                         </div>
-                        <h3>Masuk to BTD Parking System</h3>
+                        <h3>Masuk to SIA Parking System</h3>
                         
                         <form method="POST" action="{{ route('login') }}">
                             @csrf

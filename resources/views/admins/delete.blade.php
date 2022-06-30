@@ -12,7 +12,7 @@
                 <form id="delete-data" action="{{ route('user.destroy', $user->id) }}" method="POST" class="d-none">
                     @method('Delete')
                     @csrf
-                    <label for="" class="text-center">Are you sure you want to delete this?</label>
+                    <label for="" class="text-center">Yakin ingin menghapus ini?</label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Kembali</button>

@@ -6,7 +6,7 @@
             <th>Nama</th>
             <th>Email</th>
             <th>Dibuat Pada</th>
-            <th class="nosort">&nbsp;</th>
+            <th class="nosort">&nbsp;Aksi</th>
             <th></th>
         </tr>
     </thead>
@@ -21,7 +21,7 @@
             <td>{{ $user->created_at->format('Y/m/d') }}</td>
             <td>
                 <div class="table-actions">
-                    <a href="#"><i class="ik ik-eye"></i></a>
+                    <a href="{{ route('user.show',$user->id) }}"><i class="ik ik-eye"></i></a>
                     <a href="{{ route('user.edit',$user->id) }}"><i class="ik ik-edit-2"></i></a>
                     <a href="#" data-toggle="modal" data-target="#delete{{ $key }}"><i class="ik ik-trash-2"></i></a>
                 </div>

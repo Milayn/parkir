@@ -2,7 +2,7 @@
     <div class="sidebar-header">
         <a class="header-brand" href="home">
             <div class="logo-img">
-                BTD 
+                SIA
                {{-- <img width="40" height="40" src="{{ asset('img/logo.png') }}" class="header-brand-img" alt="lavalite"> --}}
             </div>
             <span class="text">&nbsp;  Parking Sys</span>

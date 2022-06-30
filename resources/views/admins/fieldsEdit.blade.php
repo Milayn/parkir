@@ -3,7 +3,7 @@
     @method('PUT')
     <div class="form-group">
         <label for="Name">Nama</label>
-        <input type="text" name="nama" class="form-control" id="nama" value="{{ $user->nama }}" ariadescribedby="nama" >
+        <input type="text" name="nama" class="form-control" id="nama" value="{{ $user->name }}" ariadescribedby="nama" >
     </div>
     <div class="form-group">
         <label for="exampleInputEmail3">Alamat Email</label>
@@ -15,9 +15,10 @@
     </div>
 
     <div class="form-group">
-        <label for="avatar">Upload Foto Profile</label>
+        <label for="avatar">Upload Foto</label>
         <input type="file" class="form-control" required="required" name="avatar" value="{{$user->avatar}}"></br>
         <img width="150px" src="{{asset('storage/'.$user->avatar)}}"> 
     </div>
     <button type="submit" class="btn btn-primary mr-2">Submit</button>
+    <button class="btn btn-light">Kembali</button>
 </form>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -37,7 +38,8 @@ class UserController extends Controller
         $user = new User;
         $user->name = $request->get('nama');
         $user->email = $request->get('email');
-        $user->password = $request->get('password');
+        // $user->password = $request->get('password');
+        $user->password = Hash::make($request->get('password'));
         $user->avatar = $image_name;
 
         $user->save();
@@ -66,7 +68,9 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        return view('admins.edit');
+        // return view('admins.edit');
+        $user= User::where('id', $id)->first();
+        return view('admins.edit', compact('user'));
 
     }
 
@@ -81,7 +85,6 @@ class UserController extends Controller
     {
         //melakukan validasi data
         $request->validate([
-            'id' => 'required',
             'nama' => 'required',
             'email' => 'required',
             'password' => 'required',
@@ -90,13 +93,13 @@ class UserController extends Controller
         $user = User::where('id', $id)->first();
         $user->name = $request->get('nama');
         $user->email = $request->get('email');
-        $user->password = $request->get('Email');
+        $user->password = Hash::make($request->get('password'));
 
         if ($user->avatar && file_exists(storage_path('app/public/' . $user->avatar))) {
-            Storage::delete('public/' . $user->avatar);
+            Storage::delete('public/'.$user->avatar);
         }
         $image_name = $request->file('avatar')->store('images', 'public');
-        $user->foto = $image_name;
+        $user->avatar = $image_name;
 
         $user->save();
 
@@ -114,6 +117,6 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         $user->delete();
-        return redirect()->route('user.index')->with('success', 'User Deleted Successfully!!');
+        return redirect()->route('user.index')->with('success', 'Data Berhasil Dihapus!!');
     }
 }

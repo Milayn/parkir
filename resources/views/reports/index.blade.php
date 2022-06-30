@@ -6,7 +6,7 @@
                 <div class="page-header-title">
                     <i class="ik ik-inbox bg-blue"></i>
                     <div class="d-inline">
-                        <h5>Vehicle Reports</h5>
+                        <h5>Laporan Kendaraan</h5>
                     </div>
                 </div>
             </div>
@@ -20,7 +20,7 @@
         <div class="card-header row">
             
             <div class="col col-sm-6">
-                <label for="">Search Vehicle Out Report</label>
+                <label for="">Pencarian Laporan Kendaraan Keluar</label>
                 <div class="card-search with-adv-search dropdown">
                     <form action="{{ route('reports.index') }}" method="GET">
                         <input type="text" value="{{ request()->search_out }}" class="form-control" name="search_out"
@@ -35,13 +35,13 @@
                         <div class="adv-search-wrap dropdown-menu dropdown-menu-right " aria-labelledby="adv_wrap_toggler">
                             <div class="row">
                                 <div class="form-group col-md-6">
-                                    <label for="date">From Date</label>
+                                    <label for="date">Dari Tanggal </label>
                                     <input type="text" value1="{{ request()->from_date }}"
                                         class="form-control datetimepicker-input" name="from_date" id="datepicker_out_from"
                                         data-toggle="datetimepicker" data-target="#datepicker_out_from">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="date">To Date</label>
+                                    <label for="date">Samapi Tanggal</label>
                                     <input type="text" value1="{{ request()->to_date }}"
                                         class="form-control datetimepicker-input" name="to_date" id="datepicker_out_to"
                                         data-toggle="datetimepicker" data-target="#datepicker_out_to">
@@ -49,7 +49,7 @@
                             </div>
 
                             <div class="btn-group" style="float: right">
-                                <button class="btn btn-theme">Search</button>
+                                <button class="btn btn-theme">Cari</button>
                             </div>
                         </div>
                         {{-- <input type="text" value="{{ old('from_date') }}" name="" id=""> --}}

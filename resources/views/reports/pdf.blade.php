@@ -19,9 +19,9 @@
                 <tr>
                     <th>Id</th>
                     <th>Reg #</th>
-                    <th>Vehicle Name</th>
-                    <th>Parking Area</th>
-                    <th>Parking Number</th>
+                    <th>Nama Kendaraan</th>
+                    <th>Area Parkir</th>
+                    <th>Nomer Parkir</th>
                 </tr>
             </thead>
             <tbody>
