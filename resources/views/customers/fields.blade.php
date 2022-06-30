@@ -31,5 +31,5 @@
         <textarea class="form-control" name="address" id="exampleTextarea1" rows="4">{{ isset($customer) ? $customer->address : '' }}</textarea>
     </div>
     <button type="submit" class="btn btn-primary mr-2">Submit</button>
-    <button class="btn btn-light">Cancel</button>
+    <button class="btn btn-light">Kembali</button>
 </form>

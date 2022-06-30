@@ -10,7 +10,7 @@
                         <option value="{{ $vehicle->id }}" @if (isset($vehiclesIn))
                             {{ $vehiclesIn->vehicle_id == $vehicle->id ? 'selected' : '' }}
                     @endif>
-                    {{ $vehicle->name .' - '. $vehicle->registration_number }}</option>
+                    {{ $vehicle->name .' - '. $vehicle-> registration_number}}</option>
                     @endforeach
                 </select>
                 @if (isset($vehiclesIn))
@@ -36,8 +36,29 @@
                     class="form-control" id="exampleInputEmail3" placeholder="Parking Number">
             </div>
         </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="exampleInputEmail3">Status Kendaraan</label>
+                <select name="status" class="form-control">
+                    @foreach (getVehicleStatus() as $key =>  $status)
+                        <option value="{{ $key }}" @if (isset($vehicle))
+                            {{ $vehicle->status == $key ? 'selected' : '' }}
+                    @endif>
+                    {{ $status }}</option>
+                    @endforeach
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="exampleInputEmail3">Nomer Pendaftaran</label>
+                <input type="text" name="registration_number"
+                    value="{{ isset($vehicle) ? $vehicle->registration_number : '' }}" class="form-control"
+                    id="exampleInputEmail3" readonly placeholder="Nomer Pendaftaran">
+            </div>
+        </div>
     </div>
 
     <button type="submit" class="btn btn-primary mr-2">Submit</button>
-    <button class="btn btn-light">Cancel</button>
+    <button class="btn btn-light">Kembali</button>
 </form>

@@ -10,11 +10,12 @@ class VehicleIn extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['parking_area', 'parking_number', 'vehicle_id','created_by'];
+    protected $fillable = ['parking_area', 'parking_number', 'vehicle_id','created_by','statis'];
 
     public function vehicle(): BelongsTo
     {
         return $this->belongsTo(Vehicle::class, 'vehicle_id', 'id');
+        return $this->belongsTo(Vehicle::class, 'statis', 'statis');
     }
 
     public function user(): BelongsTo

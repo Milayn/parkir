@@ -21,7 +21,7 @@ class VehicleInController extends Controller
 
     public function create()
     {
-        return view('vehicles_in.create',['vehicles' => Vehicle::get(['id','name', 'registration_number'])]);
+        return view('vehicles_in.create',['vehicles' => Vehicle::get(['id','name', 'registration_number','status'])]);
     }
 
     public function store(StoreVehicleInRequest $request)
@@ -33,12 +33,12 @@ class VehicleInController extends Controller
 
     public function show(VehicleIn $vehiclesIn)
     {
-        return view('vehicles_in.show',compact('vehicleIn'), ['vehicles' => Vehicle::get(['id','name', 'registration_number'])]);
+        return view('vehicles_in.show',compact('vehicleIn'), ['vehicles' => Vehicle::get(['id','name', 'registration_number','status'])]);
     }
 
     public function edit(VehicleIn $vehiclesIn)
     {
-        return view('vehicles_in.edit', compact('vehiclesIn'), ['vehicles' => Vehicle::get(['id','name', 'registration_number'])]);
+        return view('vehicles_in.edit', compact('vehiclesIn'), ['vehicles' => Vehicle::get(['id','name', 'registration_number','status'])]);
     }
 
     public function update(UpdateVehicleInRequest $request, VehicleIn $vehiclesIn)

@@ -15,8 +15,8 @@
                     <label for="" class="text-center">Are you sure you want to delete this?</label>
             </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-          <button type="submit" class="btn btn-danger">Yes Delete</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Kembali</button>
+          <button type="submit" class="btn btn-danger">Ya, Hapus</button>
         </div>
     </form>
       </div>

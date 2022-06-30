@@ -3,12 +3,12 @@
         <tr>
             <th>Id</th>
             <th>Reg #</th>
-            <th>Category</th>
-            <th>Customer</th>
-            <th>Vehicle Name</th>
-            <th>Plat Number</th>
+            <th>Kategori</th>
+            <th>Nama Pengunjung</th>
+            <th>Nama Kendaraan</th>
+            <th>Plat Nomer</th>
             <th>Status</th>
-            <th>Created At</th>
+            <th>Dibuat pada</th>
             <th class="nosort">Operation</th>
             <th>Action</th>
         </tr>

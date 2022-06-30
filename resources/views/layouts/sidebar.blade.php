@@ -2,10 +2,10 @@
     <div class="sidebar-header">
         <a class="header-brand" href="index.html">
             <div class="logo-img">
-                JSS
+                BGA 
                {{-- <img width="40" height="40" src="{{ asset('img/logo.png') }}" class="header-brand-img" alt="lavalite"> --}}
             </div>
-            <span class="text">&nbsp; Parking Sys</span>
+            <span class="text">&nbsp;  Parking Sys</span>
         </a>
         <button type="button" class="nav-toggle"><i data-toggle="expanded" class="ik ik-toggle-right toggle-icon"></i></button>
         <button id="sidebarClose" class="nav-close"><i class="ik ik-x"></i></button>
@@ -37,8 +37,8 @@
                 <div class="nav-item has-sub {{ request()->routeIs('categories*')  ? 'open' : ''}}">
                     <a href="#"><i class="ik ik-box"></i><span>Kategori</span></a>
                     <div class="submenu-content">
-                        <a href="{{ route('categories.create') }}" class="menu-item  {{ request()->routeIs('categories.create') ? 'active' : '' }}">Create</a>
-                        <a href="{{ route('categories.index') }}" class="menu-item  {{ request()->routeIs('categories.index') ? 'active' : '' }}">List</a>
+                        <a href="{{ route('categories.create') }}" class="menu-item  {{ request()->routeIs('categories.create') ? 'active' : '' }}">Buat Kategori</a>
+                        <a href="{{ route('categories.index') }}" class="menu-item  {{ request()->routeIs('categories.index') ? 'active' : '' }}">Daftar Kategori</a>
                     </div>
                 </div>
                 <div class="nav-item has-sub {{ request()->routeIs('vehicles*')  ? 'open' : ''}}">
