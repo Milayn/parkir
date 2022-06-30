@@ -7,6 +7,7 @@ use App\Models\VehicleOut;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use Barryvdh\DomPDF\Facade as PDF;
 
 class ReportController extends Controller
 {
@@ -34,5 +35,10 @@ class ReportController extends Controller
         }
 
         return view('reports.index', compact('reports', 'reports_in', 'reports_out'));
+    }
+    public function cetak_pdf(){
+        $reports = VehicleOut::all();
+        $pdf = PDF::loadview('reports.pdf',['reports'=>$reports]);
+        return $pdf->stream();
     }
 }

@@ -88,10 +88,8 @@
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script>
-        window.jQuery || document.write(
-            '<script src="{{ asset('backend/src/js/vendor/jquery-3.3.1.min.js') }}"><\/script>')
-    </script>
+    
+    <script src="{{ asset('backend/src/js/vendor/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ asset('backend/plugins/popper.js/dist/umd/popper.min.js') }}"></script>
     <script src="{{ asset('backend/plugins/bootstrap/dist/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('backend/plugins/perfect-scrollbar/dist/perfect-scrollbar.min.js') }}"></script>
